@@ -1,4 +1,3 @@
-
 export interface RedditPost {
   title: string;
   subreddit: string;
@@ -14,3 +13,10 @@ export interface TopicSummaries {
   negativeSentiments: string;
   keyQuestions: string;
 }
+
+export interface ThreadContent {
+  postBody: string;
+  keyDiscussionPoints: string;
+}
+
+export type AnalysisDetailLevel = 'concise' | 'detailed' | 'extensive';
